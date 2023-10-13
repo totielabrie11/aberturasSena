@@ -269,6 +269,10 @@ header
   transition: all 0.3s ease 0s;
 }
 
+.header-area .main-nav .logo img {
+ width: 40%;
+}
+
 .background-header .main-nav .logo {
   line-height: 80px;
   width: 160px;
