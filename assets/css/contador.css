@@ -1,0 +1,155 @@
+  /* Estilos generales para la lista */
+  .nacc {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    padding: 40px 0;  /* Espaciado vertical para la sección */
+}
+
+/* Estilos para el contenedor de cada contador */
+.counter {
+    display: inline-block;
+    font-size: 2em;  /* Tamaño de fuente grande para el contador */
+    color: #FFFFFF;  /* Color blanco para el contador */
+    margin: 0 40px;  /* Espaciado horizontal entre contadores */
+    padding: 20px 40px;  /* Espaciado interno para cada contador */
+    background-color: #34495E;  /* Fondo gris para cada contador */
+    border-radius: 10px;  /* Bordes redondeados para cada contador */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  /* Sombra sutil para darle profundidad */
+    position: relative;
+    transition: transform 0.3s ease;  /* Efecto de transformación al hacer hover */
+}
+
+/* Efecto de "levantamiento" al hacer hover en el contador */
+.counter:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para el texto descriptivo debajo de cada contador */
+.counter + p {
+    font-size: 1em;
+    color:black;  /* Color gris claro para el texto descriptivo */
+   margin-bottom: 20px;
+}
+
+/* Animación para el contador */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplicar la animación al cargar la página */
+.counter {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+        /* Estilos generales para la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  /* Espaciado entre imágenes */
+    padding: 40px 0;  /* Espaciado vertical para la galería */
+}
+    
+    /* Estilos para cada imagen de la galería */
+.gallery img {
+    width: 200px;  /* Ancho fijo para cada imagen */
+    height: auto;  /* Altura automática para mantener la proporción */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  /* Sombra sutil */
+    cursor: pointer;  /* Cursor de mano al pasar sobre la imagen */
+    transition: transform 0.3s ease;  /* Efecto de transformación al hacer hover */
+}
+    
+    /* Efecto de "levantamiento" al hacer hover en la imagen */
+.gallery img:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  /* Fondo oscuro semi-transparente */
+    z-index: 1000;  /* Asegurarse de que el modal esté por encima de todo */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para la imagen dentro del modal */
+.modal img {
+    width: 70%;
+    max-height: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los botones de siguiente y anterior */
+.modal button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #34495E;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #2C3E50;
+}
+
+.modal .prev {
+    left: 10%;
+}
+
+.modal .next {
+    right: 10%;
+}
+
+/* estilos de carousel que estoy usando para mostrar a los clientes */
+.carousel-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin: auto;
+   
+}
+
+.carousel-slide {
+    display: flex;
+    width: calc(300px * 6);
+    height: 100%;
+    animation: carouselAnimation 12s infinite;
+}
+
+.carousel-image {
+    width: 300px;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes carouselAnimation {
+    0%, 16.66% { transform: translateX(0%); }
+    16.67%, 33.32% { transform: translateX(-16.66%); }
+    33.33%, 49.98% { transform: translateX(-33.32%); }
+    50%, 66.64% { transform: translateX(-49.98%); }
+    66.65%, 83.30% { transform: translateX(-66.64%); }
+    83.31%, 99.96% { transform: translateX(-83.30%); }
+    100% { transform: translateX(0%); }
+}

@@ -741,6 +741,7 @@ banner
 }
 
 .slide-inner .header-text {
+  margin-top: 75px;
   position: absolute;
   width: 50%;
   top: 50%;
@@ -750,8 +751,8 @@ banner
 .slide-inner .header-text h2 {
   position: relative;
   z-index: 2;
-  font-size: 56px;
-  color: #fff;
+  font-size: 40px;
+  color: #eee;
   font-weight: 700;
   opacity: 1;
   visibility: visible;
@@ -770,16 +771,19 @@ banner
 }
 
 .slide-inner .header-text p {
-  color: #fff;
   margin-right: 60px;
   margin-bottom: 50px;
   opacity: 1;
   visibility: visible;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold 100px;
+  text-shadow: #fff 1px 1px 1px;
 }
 
 .slide-inner .header-text h2 em {
   font-style: normal;
-  color: #ff511a;
+  color:#2E4687;
 }
 
 .slide-inner .header-text .buttons {
@@ -1015,16 +1019,16 @@ calculator
 
 section.calculator {
   margin-top: 150px;
-  background-image: url(../images/calculator-bg.jpg);
+  background-image: url('../images/fondo maquina 2.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
-  padding: 80px 0px;
+  padding: 40px;
 }
 
 section.calculator .left-image {
-  margin: -110px 45px -80px 0px;
+  margin: -32px 45px -110px 0px;
 }
 
 section.calculator .section-heading {
@@ -1767,4 +1771,7 @@ body {
   .testimonials .item {
     padding: 50px;
   }
+
+
+  
 }
