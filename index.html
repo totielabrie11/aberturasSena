@@ -47,7 +47,7 @@ https://templatemo.com/tm-574-mexant
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="#top" class="active">Inicio</a></li>
                           <li class="scroll-to-section"><a href="#services">Servicios</a></li>
                           <li class="scroll-to-section"><a href="#about">Nosotros</a></li>
                           <li class="has-sub">
@@ -511,36 +511,7 @@ nextButton.addEventListener('click', (event) => {
     showNextImage();
 });
 
-    
-    //funcion del contador experiencia de cliente
 
-    function updateCounters() {
-    const counters = document.querySelectorAll(".counter");
-    const speed = 600;  // Cuánto tiempo (en ms) tomará incrementar cada número
-
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute("data-target");
-            const count = +counter.innerText;
-
-            // Incremento por cada frame
-            const increment = target / speed;
-
-            // Verifica si el contador ha alcanzado el valor objetivo
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 1);
-            } else {
-                counter.innerText = target;
-            }
-        };
-
-        updateCount();
-    });
-}
-
-// Invocar la función cuando se carga el documento
-document.addEventListener("DOMContentLoaded", updateCounters);
 
 // Ahora puedes invocar la función `updateCounters` cuando lo desees.
 // Por ejemplo:

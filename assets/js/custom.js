@@ -274,20 +274,33 @@
         });
     }
 
+	function visible($element, partial) {
+		if (!$element.length) {
+			console.warn("Elemento no encontrado:", $element);
+			return false;
+		}
+	
+		var $w = jQuery(window),
+			viewTop = $w.scrollTop(),
+			viewBottom = viewTop + $w.height(),
+			_top = $element.offset().top,
+			_bottom = _top + $element.height(),
+			compareTop = partial === true ? _bottom : _top,
+			compareBottom = partial === true ? _top : _bottom;
+	
+		return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $element.is(':visible'));
+	}
 
-	function visible(partial) {
-        var $t = partial,
-            $w = jQuery(window),
-            viewTop = $w.scrollTop(),
-            viewBottom = viewTop + $w.height(),
-            _top = $t.offset().top,
-            _bottom = _top + $t.height(),
-            compareTop = partial === true ? _bottom : _top,
-            compareBottom = partial === true ? _top : _bottom;
-
-        return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
-
-    }
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			if (visible($('#nosotros'), true)) {
+				console.log("La sección 'nosotros' es parcialmente visible");
+				// Aquí puedes iniciar tu contador si aún no ha comenzado
+			}
+		});
+	});
+	
+	
 
     $(window).scroll(function() {
 
@@ -314,3 +327,42 @@
 
 
 })(window.jQuery);
+
+var nosotrosOffset = $('#about').offset().top;
+
+$(window).scroll(function() {
+    var scrollPos = $(window).scrollTop();
+    if (scrollPos >= nosotrosOffset) {
+        console.log("Has entrado en la sección 'nosotros'");
+        // Aquí puedes iniciar tu contador si aún no ha comenzado
+		updateCounters()
+    }
+});
+
+
+ //funcion del contador experiencia de cliente
+
+ function updateCounters() {
+    const counters = document.querySelectorAll(".counter");
+    const speed = 60000;  // Cuánto tiempo (en ms) tomará incrementar cada número
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+
+            // Incremento por cada frame
+            const increment = target / speed;
+
+            // Verifica si el contador ha alcanzado el valor objetivo
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCount();
+    });
+}
