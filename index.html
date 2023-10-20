@@ -348,47 +348,48 @@ https://templatemo.com/tm-574-mexant
   </section>
 
   <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="row">
+<div class="container">
+    <div class="row">
         <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h6>Testimonials</h6>
-            <h4>What They Say</h4>
-          </div>
+            <div class="section-heading">
+                <h6>Testimonios</h6>
+                <h4>Lo que nuestros clientes dicen</h4>
+            </div>
         </div>
         <div class="col-lg-10 offset-lg-1">
-          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
-            <div class="item">
-              <i class="fa fa-quote-left"></i>
-              <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel scelerisque elit.”</p>
-              <h4>David Eigenberg</h4>
-              <span>CEO of Mexant</span>
-              <div class="right-image">
-                <img src="assets/images/testimonials-01.jpg" alt="">
-              </div>
+            <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+                <div class="item">
+                    <i class="fa fa-quote-left"></i>
+                    <p>“Desde que instalé las aberturas de PVC de Aberturas Sena, la calidad de vida en mi hogar ha mejorado notablemente. No solo es más cálido en invierno, sino que también es más silencioso y estético.”</p>
+                    <h4>Hernán Pappalardo</h4>
+                    <span>Cliente satisfecha</span>
+                    <div class="right-image">
+                        <img src="assets/images/cliente1.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa fa-quote-left"></i>
+                    <p>“La atención y el servicio postventa de Aberturas Sena es excepcional. Me ayudaron a elegir el diseño perfecto para mi casa y el resultado es increíble.”</p>
+                    <h4>Carlos Pérez</h4>
+                    <span>Cliente desde 2020</span>
+                    <div class="right-image">
+                        <img src="assets/images/cliente3.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa fa-quote-left"></i>
+                    <p>“Recomiendo Aberturas Sena a todos mis amigos y familiares. La calidad de sus productos y la profesionalidad de su equipo hacen la diferencia.”</p>
+                    <h4>Lucía Fernández</h4>
+                    <span>Cliente recurrente</span>
+                    <div class="right-image">
+                        <img src="assets/images/cliente2.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="item">
-              <i class="fa fa-quote-left"></i>
-              <p>“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor, at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.”</p>
-              <h4>Andrew Garfield</h4>
-              <span>CTO of Mexant</span>
-              <div class="right-image">
-                <img src="assets/images/testimonials-01.jpg" alt="">
-              </div>
-            </div>
-            <div class="item">
-              <i class="fa fa-quote-left"></i>
-              <p>“Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo. Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”</p>
-              <h4>George Lopez</h4>
-              <span>Crypto Manager</span>
-              <div class="right-image">
-                <img src="assets/images/testimonials-01.jpg" alt="">
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
+
   </section>
 
   <section class="partners">
@@ -513,9 +514,9 @@ nextButton.addEventListener('click', (event) => {
     
     //funcion del contador experiencia de cliente
 
-      document.addEventListener("DOMContentLoaded", function() {
+    function updateCounters() {
     const counters = document.querySelectorAll(".counter");
-    const speed = 600 ;  // Cuánto tiempo (en ms) tomará incrementar cada número
+    const speed = 600;  // Cuánto tiempo (en ms) tomará incrementar cada número
 
     counters.forEach(counter => {
         const updateCount = () => {
@@ -536,7 +537,14 @@ nextButton.addEventListener('click', (event) => {
 
         updateCount();
     });
-});
+}
+
+// Invocar la función cuando se carga el documento
+document.addEventListener("DOMContentLoaded", updateCounters);
+
+// Ahora puedes invocar la función `updateCounters` cuando lo desees.
+// Por ejemplo:
+// updateCounters();
 
 
         var interleaveOffset = 0.5;
