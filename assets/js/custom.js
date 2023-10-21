@@ -344,7 +344,7 @@ $(window).scroll(function() {
 
  function updateCounters() {
     const counters = document.querySelectorAll(".counter");
-    const speed = 60000;  // Cuánto tiempo (en ms) tomará incrementar cada número
+    const speed = 120000;  // Cuánto tiempo (en ms) tomará incrementar cada número
 
     counters.forEach(counter => {
         const updateCount = () => {

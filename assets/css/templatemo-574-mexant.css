@@ -752,7 +752,7 @@ banner
   position: relative;
   z-index: 2;
   font-size: 40px;
-  color: #eee;
+  color: #AE8A29;
   font-weight: 700;
   opacity: 1;
   visibility: visible;
@@ -777,7 +777,9 @@ banner
   visibility: visible;
   color: black;
   text-transform: uppercase;
-  font-weight: bold 100px;
+  font-size: 20px;
+  font-weight: 800;
+  word-spacing: 10px;
   text-shadow: #fff 1px 1px 1px;
 }
 
@@ -833,7 +835,7 @@ section.services {
   transition: all .5s;
   float: left;
   font-size: 64px;
-  color: #43ba7f;
+  color: #AE8A28;
   margin-bottom: 30px;
   margin-right: 30px;
 }
@@ -847,7 +849,7 @@ cta
 */
 
 section.simple-cta {
-  background-image: url(../images/cta-bg.jpg);
+  background-image: url(../images/fondo\ maquina.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1031,6 +1033,18 @@ section.calculator .left-image {
   margin: -32px 45px -110px 0px;
 }
 
+@media (min-width: 1399px) {
+  section.calculator .left-image {
+        margin: -136px 45px -110px 0px !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  section.calculator .left-image {
+        margin: 72px 45px -110px 0px !important;
+  }
+}
+
 section.calculator .section-heading {
   text-align: left;
 }
@@ -1044,10 +1058,12 @@ section.calculator .section-heading h4 {
   font-size: 14px;
   margin-bottom: 5px;
 }
-
+#calculate ::placeholder{
+  color: white;
+}
 #calculate input,
 #calculate select {
-  background-color: rgba(121,134,151, 0.7);
+  background-color: rgba(121, 134, 151, 0.375);
   border: none;
   border-radius: 5px;
   width: 100%;
@@ -1774,4 +1790,40 @@ body {
 
 
   
+}
+/* footer */
+
+.footer {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #007BFF;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .footer .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
 }
