@@ -233,6 +233,7 @@ header
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
 }
 
+
 .header-area {
   background-image: url(../images/header-bg.png);
   background-size: contain;
@@ -258,9 +259,10 @@ header
 .header-area .main-nav .logo {
   line-height: 120px;
   color: #fff;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
   text-transform: uppercase;
+  font-style: italic;
   letter-spacing: 2px;
   float: left;
   -webkit-transition: all 0.3s ease 0s;
@@ -269,8 +271,8 @@ header
   transition: all 0.3s ease 0s;
 }
 
-.header-area .main-nav .logo img {
- width: 40%;
+.header-area .main-nav .logo img{
+ width: 60px;
 }
 
 .background-header .main-nav .logo {
@@ -752,7 +754,7 @@ banner
   position: relative;
   z-index: 2;
   font-size: 40px;
-  color: #AE8A29;
+  color:#D99640;
   font-weight: 700;
   opacity: 1;
   visibility: visible;
@@ -785,7 +787,7 @@ banner
 
 .slide-inner .header-text h2 em {
   font-style: normal;
-  color:#2E4687;
+  color:#156B99;
 }
 
 .slide-inner .header-text .buttons {
@@ -1341,6 +1343,12 @@ section.what-we-do {
   margin-bottom: 40px;
 }
 
+.what-we-do .right-items {
+    display: flex;
+    flex-direction: column; /* Esto es para que los items se apilen verticalmente. */
+  }
+  
+
 .what-we-do .right-items .item {
   border-radius: 5px;
   padding: 40px 30px;
@@ -1486,6 +1494,7 @@ section.service-details ul.nacc li {
 }
 
 section.service-details ul.nacc li .left-image {
+  width: 50% !important;
   position: absolute;
   margin-right: 50px;
   top: 50%;
