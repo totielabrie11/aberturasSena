@@ -29,7 +29,7 @@
 .counter + p {
     font-size: 1em;
     color:black;  /* Color gris claro para el texto descriptivo */
-   margin-bottom: 20px;
+   margin-top: 20px;
 }
 
 /* Animación para el contador */

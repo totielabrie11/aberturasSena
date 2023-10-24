@@ -754,12 +754,13 @@ banner
   position: relative;
   z-index: 2;
   font-size: 40px;
-  color:#D99640;
+  color:#F1C691;
   font-weight: 700;
   opacity: 1;
   visibility: visible;
   line-height: 70px;
   margin-bottom: 40px;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
 }
 
 .slide-inner .header-text .div-dec {
@@ -777,17 +778,18 @@ banner
   margin-bottom: 50px;
   opacity: 1;
   visibility: visible;
-  color: black;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 800;
   word-spacing: 10px;
-  text-shadow: #fff 1px 1px 1px;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
 }
 
 .slide-inner .header-text h2 em {
   font-style: normal;
-  color:#156B99;
+  color:#AFD9C5;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
 }
 
 .slide-inner .header-text .buttons {
@@ -1239,7 +1241,7 @@ page heading
 */
 
 .page-heading {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url(../images/trabajo5.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
