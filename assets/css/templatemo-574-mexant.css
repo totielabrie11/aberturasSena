@@ -853,7 +853,7 @@ cta
 */
 
 section.simple-cta {
-  background-image: url(../images/fondo\ maquina.png);
+  background-image: url(../images/trabajo12.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1501,6 +1501,13 @@ section.service-details ul.nacc li .left-image {
   margin-right: 50px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media (max-width: 576px){
+  section.service-details ul.nacc li .left-image {
+    width: 100% !important;
+    
+  }
 }
 
 section.service-details ul.nacc li .left-image img {
