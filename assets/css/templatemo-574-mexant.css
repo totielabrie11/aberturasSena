@@ -44,6 +44,16 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+:root {
+    --primary-color: #212741; /* Color principal oscuro */
+    --secondary-color: #ff511a; /* Color secundario (naranja) */
+    --tertiary-color: #43ba7f; /* Color terciario (verde) */
+    --background-color: #f7f7f7; /* Color de fondo claro */
+    --text-color: #2a2a2a; /* Color de texto principal */
+    --border-color: #eee; /* Color de borde */
+}
+
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -754,13 +764,13 @@ banner
   position: relative;
   z-index: 2;
   font-size: 40px;
-  color:#F1C691;
+  color:#ffffff;
   font-weight: 700;
   opacity: 1;
   visibility: visible;
   line-height: 70px;
   margin-bottom: 40px;
-  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+  text-shadow: rgb(0, 0, 0) 4px 4px 4px;
 }
 
 .slide-inner .header-text .div-dec {
@@ -788,8 +798,8 @@ banner
 
 .slide-inner .header-text h2 em {
   font-style: normal;
-  color:#AFD9C5;
-  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+  color:#ffffff;
+  text-shadow: rgb(0, 0, 0) 4px 4px 4px;
 }
 
 .slide-inner .header-text .buttons {
@@ -853,7 +863,7 @@ cta
 */
 
 section.simple-cta {
-  background-image: url(../images/trabajo12.png);
+  background-image: url(../images/casaAmaca.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -870,15 +880,16 @@ section.simple-cta h4 {
   font-weight: 700;
   color: #fff;
   line-height: 50px;
+  text-shadow: black 4px 4px 4px;
 }
 
 section.simple-cta h4 em {
   font-style: normal;
-  color: #43ba7f;
+  color: #ffffff;
 }
 
 section.simple-cta h4 strong {
-  color: #ff511a;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -1241,7 +1252,7 @@ page heading
 */
 
 .page-heading {
-  background-image: url(../images/trabajo5.png);
+  background-image: url(../images/casaPino1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
