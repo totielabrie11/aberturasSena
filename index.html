@@ -220,19 +220,19 @@ https://templatemo.com/tm-574-mexant
             <h4>Conócenos Más de Cerca</h4>
           </div>
         </div>
-        <div class="col-lg-8">
-          <div class="naccs">
+        <div class="col-lg-8 about-section">
+        <div class="naccs">
             <div class="tabs">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="menu">
-                    <div class="active gradient-border"><span>Proyectos finalizados</span></div>
-                    <div class="gradient-border"><span>Imagenes</span></div>
-                    <div class="gradient-border"><span>Clientes</span></div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <ul class="nacc ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="menu">
+                            <div class="active gradient-border"><span>Proyectos finalizados</span></div>
+                            <div class="gradient-border"><span>Imagenes</span></div>
+                            <div class="gradient-border"><span>Clientes</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <ul class="nacc">
                     <li class="active">
                       <p>Proyectos terminados</p>
                       <div class="counter" data-target="100">0</div>
@@ -291,73 +291,81 @@ https://templatemo.com/tm-574-mexant
     </div>
   </section>
 
-  <section class="calculator">
+  <section id="materiales" class="about-us">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="left-image">
-            <img src="assets/images/instalador-removebg-preview.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="section-heading">
-            <h6>Calidad de Vida</h6>
-            <h4>Mejora tu Espacio con Aberturas Sena</h4>
-          </div>
-          <form target="_blank" id="calculate" action="https://formsubmit.co/aberturassena@gmail.com" method="POST" class="contact-form">
-            <div class="row">
-                <div class="col-lg-6">
-                    <fieldset>
-                        <label for="name">Tu Nombre</label>
-                        <input type="text" name="nombre" id="name" placeholder="Ej. Juan Pérez" autocomplete="on" required>
-                    </fieldset>
-                </div>
-                <div class="col-lg-6">
-                    <fieldset>
-                        <label for="email">Tu Correo</label>
-                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Ej. juanperez@email.com" required>
-                    </fieldset>
-                </div>
-                <div class="col-lg-6">
-                  <fieldset>
-                      <label for="telefono">Teléfono</label>
-                      <input type="text" name="telefono" id="telefono" placeholder="11 XXXX-XXXX, +54 11 XXXX-XXXX" pattern="(\+54\s?9\s?\d{4}-?\d{4}|\+54\s?\d{2}\d{4}-?\d{4}|9\d{4}-?\d{4}|\d{10})" autocomplete="on" required>
-                      <span class="note d-none">Formatos aceptados: 9 XXXX-XXXX, +54 9 XXXX-XXXX, +5411XXXXXXX o 10 dígitos seguidos</span>
-                  </fieldset>
-              </div>
-              
-                     
-                <div class="col-lg-6">
-                  <fieldset>
-                      <label for="subject">Asunto</label>
-                      <input type="text" name="asunto" id="subject" placeholder="Ej. Consulta sobre aberturas" autocomplete="on" required>
-                  </fieldset>
-              </div>
-                <div class="col-lg-12">
-                    <fieldset>
-                        <label for="chooseOption">Razón de Contacto</label>
-                        <select name="categoria" class="form-select" aria-label="Razón de Contacto" id="chooseOption">
-                            <option selected>Elige una opción</option>
-                            <option value="Consulta General">Consulta General</option>
-                            <option value="Presupuesto">Solicitud de Presupuesto</option>
-                            <option value="Instalación">Servicio de Instalación</option>
-                            <option value="Postventa">Atención Postventa</option>
-                        </select>
-                    </fieldset>
-                </div>
-                <div class="col-lg-12">
-                    <fieldset>
-                        <button type="submit" id="form-submit" class="orange-button">Enviar</button>
-                    </fieldset>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h6>Materiales</h6>
+                    <h4>Aberturas de PVC <br> vs <br> Aluminio</h4>
                 </div>
             </div>
-        </form>
-        
-
+            <div class="col-lg-8">
+                <div class="naccs">
+                    <div class="tabs">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="menu1">
+                                    <div id="btn-pvc" class="gradient-border material-btn"><span>Aberturas de PVC</span></div>
+                                    <div id="btn-aluminio" class="gradient-border material-btn"><span>Aberturas de Aluminio</span></div>
+                                    <div id="btn-laura" class="gradient-border material-btn"><span>El Caso de Laura</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <ul class="nacc">
+                                    <!-- Aberturas de PVC -->
+                                    <li id="content-pvc" class="liMostrar active">
+                                        <h3>Aberturas de PVC:</h3>
+                                        <img src="assets/images/perfilPvc.png" alt="Imagen representativa de aberturas de PVC">
+                                        <ul class="active">
+                                            <li class="active"><span>Aislamiento Térmico Superior:</span> El PVC es conocido por su excelente capacidad de aislamiento térmico.</li>
+                                            <li class="active"><span>Mantenimiento Mínimo:</span> Las aberturas de PVC son resistentes a la decoloración y al desgaste.</li>
+                                            <li class="active"><span>Variedad de Diseños:</span> Disponibles en una amplia gama de estilos y colores.</li>
+                                        </ul>
+                                    </li>
+                                    <!-- Aberturas de Aluminio -->
+                                    <li id="content-aluminio" class="liMostrar">
+                                        <h3>Aberturas de Aluminio:</h3>
+                                        <img src="assets/images/perfilAlumino.png" alt="Imagen representativa de aberturas de aluminio">
+                                        <ul>
+                                            <li class="active"><span>Durabilidad y Resistencia:</span> El aluminio es robusto y resistente a condiciones adversas.</li>
+                                            <li class="active"><span>Elegancia Moderna:</span> Acabado metálico natural que aporta un toque contemporáneo.</li>
+                                            <li class="active"><span>Ligereza y Flexibilidad:</span> Ideal para aberturas de grandes dimensiones y formas personalizadas.</li>
+                                        </ul>
+                                    </li>
+                                    <!-- El Caso de Laura -->
+                                    <li id="content-laura" class="liMostrar">
+                                        <h3>El Caso de Laura</h3>
+                                        <img src="assets/images/fotoLaura.png" alt="Foto de Laura">
+                                        <p>Laura decidió renovar su casa y uno de los aspectos principales que quería cambiar eran las aberturas. Después de investigar, se encontró con dos opciones principales: PVC y aluminio. A continuación, te presentamos cómo Laura evaluó las ventajas de cada material para tomar su decisión:</p>
+                                        <ul>
+                                            <li><span>Ubicación y Clima:</span> Laura vive en una ciudad con inviernos fríos y veranos calurosos. Al considerar el aislamiento térmico superior del PVC, pensó que sería una excelente opción para mantener una temperatura agradable en su hogar durante todo el año.</li>
+                                            <li><span>Estilo de la Casa:</span> La casa de Laura tiene un diseño moderno y minimalista. Le encantó el acabado metálico natural del aluminio, ya que aportaría ese toque contemporáneo que buscaba.</li>
+                                            <li><span>Mantenimiento:</span> Laura tiene una agenda ocupada y no quería preocuparse por el mantenimiento constante de las aberturas. Al saber que el PVC requiere mantenimiento mínimo y que el aluminio es resistente a la corrosión, ambos materiales se convirtieron en opciones atractivas.</li>
+                                            <li><span>Personalización:</span> Laura deseaba una ventana de gran tamaño en su sala de estar para aprovechar la vista panorámica. Al considerar la flexibilidad del aluminio para crear aberturas de grandes dimensiones, vio una oportunidad para lograr su visión.</li>
+                                        </ul>
+                                        <p><strong>Decisión Final:</strong> Después de evaluar las ventajas de ambos materiales, Laura decidió optar por aberturas de PVC para la mayoría de las habitaciones de su casa debido a su excelente aislamiento térmico y bajo mantenimiento. Sin embargo, para su sala de estar, eligió una abertura de aluminio de gran tamaño para aprovechar la vista panorámica y darle ese toque moderno que tanto deseaba. Esta combinación le permitió disfrutar de lo mejor de ambos mundos y lograr un equilibrio perfecto entre funcionalidad y estética.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="right-content">
+                    <h4>¿Por qué elegirnos?</h4>
+                    <p>En Aberturas Sena, ofrecemos soluciones personalizadas para cada cliente, garantizando la máxima calidad y satisfacción en cada proyecto.</p>
+                    <div class="green-button">
+                        <a href="about-us.html">Conoce más sobre nosotros</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
+
+
 
   <section class="testimonials" id="testimonials">
 <div class="container">
@@ -474,6 +482,8 @@ https://templatemo.com/tm-574-mexant
     
     
 <script>
+
+
 
 //función para galería de fotos
 // Seleccionar todos los elementos de la galería

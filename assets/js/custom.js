@@ -111,22 +111,39 @@
 	})();
 
 
-	$(document).on("click", ".naccs .menu div", function() {
+	$(document).on("click", ".about-section .naccs .menu div", function() {
 		var numberIndex = $(this).index();
 	
-		if (!$(this).is("active")) {
-			$(".naccs .menu div").removeClass("active");
-			$(".naccs ul li").removeClass("active");
+		if (!$(this).hasClass("active")) {
+			$(".about-section .naccs .menu div").removeClass("active");
+			$(".about-section .naccs ul li").removeClass("active");
 	
 			$(this).addClass("active");
-			$(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+			$(".about-section .naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
 	
-			var listItemHeight = $(".naccs ul")
+			var listItemHeight = $(".about-section .naccs ul")
 				.find("li:eq(" + numberIndex + ")")
 				.innerHeight();
-			$(".naccs ul").height(listItemHeight + "px");
+			$(".about-section .naccs ul").height(listItemHeight + "px");
 		}
 	});
+	
+
+	document.addEventListener('DOMContentLoaded', function() {
+		const buttons = document.querySelectorAll('.menu1 .material-btn');
+		const contentItems = document.querySelectorAll('.liMostrar');
+	
+		buttons.forEach((btn, index) => {
+			btn.addEventListener('click', function() {
+				buttons.forEach(button => button.classList.remove('active1'));
+				contentItems.forEach(item => item.classList.remove('active'));
+	
+				btn.classList.add('active1');
+				contentItems[index].classList.add('active');
+			});
+		});
+	});
+	
 
 	$('.owl-testimonials').owlCarousel({
 		items:1,

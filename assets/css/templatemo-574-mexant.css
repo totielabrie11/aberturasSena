@@ -949,7 +949,27 @@ section.about-us .naccs .menu div {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
+section.about-us .naccs .menu1 div {
+  padding: 15px 30px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px !important;
+  margin-right: 30px;
+  font-size: 18px;
+  color: #212741;
+  background-color: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  font-weight: 600;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
 section.about-us .naccs .menu div.active {
+  color: #ff511a;
+}
+
+section.about-us .naccs .menu div.active1 {
   color: #ff511a;
 }
 
@@ -1026,91 +1046,6 @@ section.about-us .right-content h4 {
 section.about-us .right-content p {
   margin-bottom: 50px;
 }
-
-
-/*
----------------------------------------------
-calculator
----------------------------------------------
-*/
-
-section.calculator {
-  margin-top: 150px;
-  background-image: url('../images/fondo maquina 2.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  padding: 40px;
-}
-
-section.calculator .left-image {
-  margin: -32px 45px -110px 0px;
-}
-
-@media (min-width: 1399px) {
-  section.calculator .left-image {
-        margin: -136px 45px -110px 0px !important;
-  }
-}
-
-@media (max-width: 1199px) {
-  section.calculator .left-image {
-        margin: 72px 45px -110px 0px !important;
-  }
-}
-
-section.calculator .section-heading {
-  text-align: left;
-}
-
-section.calculator .section-heading h4 {
-  color: #fff;
-}
-
-#calculate label {
-  color: #fff;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-#calculate ::placeholder{
-  color: white;
-}
-#calculate input,
-#calculate select {
-  background-color: rgba(121, 134, 151, 0.375);
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  height: 42px;
-  color: #fff;
-  font-size: 14px;
-  margin-bottom: 30px;
-  outline: none;
-}
-
-#calculate select {
-  cursor: pointer;
-}
-
-#calculate button.orange-button {
-  font-size: 14px;
-  color: #fff;
-  background-color: #ff511a;
-  padding: 12px 30px;
-  display: inline-block;
-  border-radius: 5px;
-  font-weight: 500;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  border: none;
-  transition: all .3s;
-}
-
-#calculate button.orange-button:hover {
-  opacity: 0.9;
-}
-
 
 
 /* 
@@ -1855,4 +1790,166 @@ body {
       justify-content: center;
       gap: 20px;
   }
+}
+
+/* Estilos para la sección comparativa y el caso de Laura */
+
+.materiales {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.materiales h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.materiales h3 {
+  font-size: 24px;
+  margin-top: 40px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+#materiales img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.materiales img:hover {
+  transform: scale(1.05);
+}
+
+.materiales ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.materiales li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+.materiales li span {
+  color: #3498db;
+  font-weight: 600;
+}
+
+/* Estilos Responsive */
+
+@media screen and (max-width: 992px) {
+  .materiales {
+      padding: 30px 15px;
+  }
+
+  .materiales h2 {
+      font-size: 26px;
+  }
+
+  .materiales h3 {
+      font-size: 22px;
+  }
+
+  .materiales li {
+      font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .materiales {
+      padding: 25px 10px;
+  }
+
+  .materiales h2 {
+      font-size: 24px;
+  }
+
+  .materiales h3 {
+      font-size: 20px;
+  }
+
+  .materiales li {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .materiales img {
+      max-width: 100%;
+  }
+}
+
+/* Estilos adicionales para la sección "materiales" */
+.about-us #materiales .menu1 div {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.about-us #materiales .naccs ul.nacc li {
+  padding: 20px 0;
+}
+
+.about-us #materiales .naccs ul.nacc li img {
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.about-us #materiales .naccs ul.nacc li p,
+.about-us #materiales .naccs ul.nacc li h3 {
+  margin: 20px 0;
+}
+
+.about-us #materiales .naccs ul.nacc li span {
+  display: block;
+  font-weight: 600;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+.gradient-border{
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  word-wrap: none !important;
+}
+
+#content-pvc {
+  visibility: hidden;/* Oculta todos los elementos por defecto */
+}
+#content-aluminio{
+  visibility: hidden;
+}
+#content-laura{
+  visibility: hidden;
+}
+
+#content-pvc, .active   {
+  visibility: visible;/* Oculta todos los elementos por defecto */
+}
+#content-aluminio{
+  visibility: visible; 
+}
+#content-laura{
+  visibility: visible;
+}
+
+
+#materiales .menu1 .material-btn.active1 {
+  color: #ff511a; /* Cambia el color del texto del botón seleccionado */
+  background-color: #f2f2f2; /* Cambia el color de fondo del botón seleccionado */
 }
