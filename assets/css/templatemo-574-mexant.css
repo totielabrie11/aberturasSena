@@ -1930,12 +1930,15 @@ body {
 
 #content-pvc {
   visibility: hidden;/* Oculta todos los elementos por defecto */
+  text-align: left;
 }
 #content-aluminio{
   visibility: hidden;
+  text-align: left;
 }
 #content-laura{
   visibility: hidden;
+  text-align: left;
 }
 
 #content-pvc, .active   {
