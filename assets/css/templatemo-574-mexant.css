@@ -282,9 +282,17 @@ header
 }
 
 .header-area .main-nav .logo img{
- width: 60px;
+ width: 250px;
 }
 
+.logoMaximizar img {
+  width: 350px !important;
+}
+@media (max-width: 550px){
+  .logoMaximizar img{
+    width: 250px !important;
+  }
+}
 .background-header .main-nav .logo {
   line-height: 80px;
   width: 160px;

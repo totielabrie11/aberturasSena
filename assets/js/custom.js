@@ -9,10 +9,10 @@
 
 	  if (scroll >= box - header) {
 	    $("header").addClass("background-header");
-		$("#fotoLogo span").hide();
+		$("#fotoLogo").removeClass("logoMaximizar");
 	  } else {
 	    $("header").removeClass("background-header");
-		$("#fotoLogo span").show();
+		$("#fotoLogo").addClass("logoMaximizar");
 	  }
 	});
 	
