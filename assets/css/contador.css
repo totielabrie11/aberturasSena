@@ -15,7 +15,7 @@
     padding: 20px 40px;  /* Espaciado interno para cada contador */
     background-color: #34495E;  /* Fondo gris para cada contador */
     border-radius: 10px;  /* Bordes redondeados para cada contador */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  /* Sombra sutil para darle profundidad */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.63);  /* Sombra sutil para darle profundidad */
     position: relative;
     transition: transform 0.3s ease;  /* Efecto de transformación al hacer hover */
 }
@@ -61,7 +61,7 @@
     width: 200px;  /* Ancho fijo para cada imagen */
     height: auto;  /* Altura automática para mantener la proporción */
     border-radius: 10px;  /* Bordes redondeados */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  /* Sombra sutil */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.63);  /* Sombra sutil */
     cursor: pointer;  /* Cursor de mano al pasar sobre la imagen */
     transition: transform 0.3s ease;  /* Efecto de transformación al hacer hover */
 }
@@ -90,7 +90,7 @@
     width: 70%;
     max-height: 70%;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.63);
 }
 
 /* Estilos para los botones de siguiente y anterior */
@@ -126,7 +126,7 @@
     height: 200px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.63);
     margin: auto;
    
 }

@@ -39,7 +39,12 @@
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0); }
-  .owl-carousel .owl-item {
+  
+    .owl-carousel .owl-item .item{
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.63);
+      border-radius: 10px;
+    }
+    .owl-carousel .owl-item {
     position: relative;
     min-height: 1px;
     float: left;
